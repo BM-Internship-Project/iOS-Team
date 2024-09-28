@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InternetErrorVC" customModule="SpeedoTransfer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hM-Jo-Uov">
+                    <rect key="frame" x="16" y="518" width="361" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="Fja-uq-XfJ"/>
+                    </constraints>
+                    <color key="tintColor" red="0.52941176469999995" green="0.1176470588" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Update">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="baseBackgroundColor" red="0.52941179279999995" green="0.1176470518" blue="0.20784312490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="UpdateButtonTapped:" destination="-1" eventType="touchUpInside" id="Hef-ak-BTa"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internet connection disabled..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYU-ta-N2Q">
+                    <rect key="frame" x="50" y="404" width="293" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="6b2-Kx-WhQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                    <color key="textColor" red="0.14117647059999999" green="0.1333333333" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noInternet" translatesAutoresizingMaskIntoConstraints="NO" id="Qdl-rd-iPg">
+                    <rect key="frame" x="142" y="248" width="109" height="110"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0hM-Jo-Uov" secondAttribute="trailing" constant="16" id="309-Dj-WEy"/>
+                <constraint firstItem="0hM-Jo-Uov" firstAttribute="top" secondItem="AYU-ta-N2Q" secondAttribute="bottom" constant="42" id="5i1-z0-RfW"/>
+                <constraint firstItem="Qdl-rd-iPg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="189" id="Bf4-6w-56z"/>
+                <constraint firstItem="0hM-Jo-Uov" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="DEZ-fP-qen"/>
+                <constraint firstItem="AYU-ta-N2Q" firstAttribute="top" secondItem="Qdl-rd-iPg" secondAttribute="bottom" constant="46" id="k9r-U3-kw1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AYU-ta-N2Q" secondAttribute="trailing" constant="50" id="l7Y-hK-hoH"/>
+                <constraint firstItem="AYU-ta-N2Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="u3f-t1-WPb"/>
+                <constraint firstItem="Qdl-rd-iPg" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xrp-RX-UfV"/>
+            </constraints>
+            <point key="canvasLocation" x="-44" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noInternet" width="109" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

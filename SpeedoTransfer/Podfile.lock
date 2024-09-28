@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.6.4)
+  - IQKeyboardManagerSwift (7.1.1)
+  - RAMAnimatedTabBarController (5.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.6.4)
+  - IQKeyboardManagerSwift
+  - RAMAnimatedTabBarController
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - RAMAnimatedTabBarController
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  IQKeyboardManagerSwift: d7f3d3a562c237a0e7335e657cd598c452f57f1b
+  RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
+
+PODFILE CHECKSUM: ecd13738e346fa8183c44dfdf9226f5b9239e5c4
+
+COCOAPODS: 1.15.2
